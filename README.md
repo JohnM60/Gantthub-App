@@ -1,102 +1,110 @@
-cmpt370 group project
+GanttHub App
 
-Add files using the command line or push an existing Git repository with the following command:
+Getting Started
 
+Installation - Quick Run
 
-cd existing_repo
-git remote add origin https://git.cs.usask.ca/keb149/cmpt306.git
-git branch -M main
-git push -uf origin main
+Clone the repo
 
-
-
-Integrate with your tools
-
-
- Set up project integrations
+git clone https://git.cs.usask.ca/mpk467/cmpt370.git
 
 
 
-Collaborate with your team
+Run cmpt370.jar
 
 
- Invite team members and collaborators
+Rebuild Exectuable
+To Rebuild the .jar executable open project in Intellij by right clicking "cmpt370.iml" -> "Open with" and select Intellij. Once the project has been opened in the Intellij IDE, navigate to the top menu bar and then select "Build"->"Build Artifacts"->"cmpt370:jar"->"Build".
+The newly compiled exectuable is located in "out/artifacts/cmpt370_jar."
+
+Main Menu
+On the main menu screen, there are two buttons. First one goes to projects, which you can use to manage tasks.
+The second button is for resources, which you can add to a project task.
+
+Projects window
+At the top are the task options. These will be used to edit a task after it is made.
+The middle section displays all tasks you have made.
+Finally, the bottom section creates a task for the project.
+
+Create a task (Bottom of projects window)
+At the bottom of the projects window is a bar with fields for entering text.
 
 
- Create a new merge request
+Enter a descriptive title for your task, providing a quick overview of what the task is about.
 
 
- Automatically close issues from merge requests
+Optionally, Assign a priority level to the task by entering a numerical value. A priority of 1 represents the highest priority, and as the number increases, the priority decreases.
 
 
- Enable merge request approvals
+Optionally, Provide a detailed description of the task, including any necessary information, requirements, or context that will help team members understand what needs to be done.
 
 
- Set auto-merge
+Optionally, assign team members to the task. This indicates who is responsible for completing the task. Assigning members helps in task delegation and clarifies roles within the team!
 
 
-
-Test and Deploy
-Use the built-in continuous integration in GitLab.
-
-
- Get started with GitLab CI/CD
-
-
- Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)
-
-
- Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy
-
-
- Use pull-based deployments for improved Kubernetes management
-
-
- Set up protected environments
+Once you have filled in the necessary information, click the "Add Task" button
 
 
 
 
-Editing this README
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to makeareadme.com for this template.
+Task options (Top of projects window)
+The "Select Task ID number" text field allows you to select which task you want to edit. Simply type the ID of the task you want to select, shown in the ID field of a task, and press enter.
+The checkbox "Complete this task" allows you to set a task to completed. This can only be done after all task dependencies are also complete. Clicking this will complete a task, setting the actual completed date to today's date. Unchecking it will uncomplete a task.
+The "Members" button allows you to edit project members. Selecting this will create a new text window. You can exit this window by clicking the "X" button on the top right.
 
-Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+1. "Add a member" adds a member to the members field of the selected task.
+2. "Position of member to remove" removes the member in the position specified.
 
-Name
-Choose a self-explaining name for your project.
+
+The "Dependencies" button allows you to specify which tasks are dependent on other tasks.
+
+1. "Add a task ID" creates a new dependency in the dependencies field, which is the task of the specified ID. 
+2. "Enter position of task to remove" removes the dependency at the position specified.
+
+
+
+Create a resource (Second button, or the "Add Resource to Project" in Projects)
+
+
+Enter a name for the resource
+
+
+Enter the total budget (in dollars) for the resource
+
+
+Enter the cost per hour for the resource
+
+
+Enter a description for the resource
+
+
+Click "Add Resource to Project". This adds the resource to the entire project.
+
+
+
+GanttHub
+GanntHub is your lightweight project managment app.
 
 Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+Designed to empower your team, GanttHub provides interface for adding, editing, and prioritizing tasks.
+You can Visualize your project and see a Gantt Chart of your tasks!
 
 Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
-Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
 Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+If you have any questions, email us at gantthub23@gmail.com
 
 Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+Become one of us! Volunteer to test our app and suggest new features for the app!
+Email gantthub23@gmail.com if interested.
 
 Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+We extend our sincere appreciation to the individuals whose contributions have played a crucial role in the development of this project:
 
-License
-For open source projects, say how it is licensed.
-
-Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+# Marcus K
+Student developer and tester
+# John M
+Student developer and tester
+# Ali A
+Student developer and tester
